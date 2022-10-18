@@ -15,9 +15,16 @@
 
   <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  
+  <script>
+    $(window).on('beforeunload', function() {
+      $('body').hide();
+      $(window).scrollTop(0);
+    });
+    </script>
     <title>Hamburguejas al Vapor</title>
 </head>
+
+
 
 <body>
   <!-- Navbar -->

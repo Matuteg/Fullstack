@@ -29,3 +29,10 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+//Reset scroll top
+
+history.scrollRestoration = "manual"
+
+$(window).on('beforeunload', function(){
+      $(window).scrollTop(0);
+});
