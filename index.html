@@ -8,7 +8,9 @@
 
   <!--CSS Styles -->
   <link rel="stylesheet" href="assets/css/styles.css" />
- 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icons8-hamburger-96.png" />
@@ -16,44 +18,39 @@
 
   <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- <script>
-    $(window).on('beforeunload', function() {
-      $('body').hide();
-      $(window).scrollTop(0);
-    });
-    </script> -->
-    <title>Hamburguejas al Vapor</title>
+ 
+  
+  <title>Hamburguejas al Vapor</title>
 </head>
 
-
-
 <body>
-  <!-- Navbar -->
+  <!-- Barra - Navbar -->
   <nav>
-    <h1 class="animate__swing">Hamburguejas al Vapor</h1>
+    <h1>Hamburguejas al Vapor</h1>
     <ul class="navigation">
       <li><a href="#Nosotros" class="nav-link">Nosotros</a></li>
       <li><a href="#Hamburguejas" class="nav-link">Hamburguejas</a></li>
-      <li><a href="#Extrax" class="nav-link">Extrax</a></li>
+      <li><a href="#Extras" class="nav-link">Extras</a></li>
       <li><a href="#Salsas" class="nav-link">Salsas</a></li>
       <li><a href="#Bebidas" class="nav-link">Bebidas</a></li>
-      <li><a href="#Contact" class="nav-link">Contact</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <li><a href="#sucursales" class="nav-link">Sucursales</a></li>
       <li><a href="#IP" class="nav-link">Conoce tu IP</a></li>
     </ul>
     <button class="burger-menu" id="burger-menu">
       <ion-icon class="bars" name="menu-outline"></ion-icon>
-      <ion-icon class="times" name="close-outline"></ion-icon>
+      <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
     </button>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Foto -->
   <section class="hero">
-    <img src="assets/images/Skinner.png" alt="jane-doe" loading="lazy" class="hero-img" />
+    <img src="assets/images/Skinner.png" alt="Hamburguesas" loading="lazy" class="hero-img" />
 
   </section>
 
   <!-- Nosotros -->
-  <section class="more-about" id="Nosotros">
+  <section class="more-about"id="Nosotros">
     <br>
     <br>
     <br>
@@ -66,24 +63,19 @@
       restaurantes que entregan en tu ubicación, ahora sólo te queda elegir el tipo de hamburgueja queres. No te lo
       pierdaaaas!!! </p>
     <p>
-    
 
   </section>
 
 
-  <!-- Projects section -->
+  <!-- Hamburguejas -->
   <section class="projects" id="Hamburguejas">
-
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><br><br>
     <h2 class="projects-title">Nuestas hamburguejas al vapor</h2>
     <div class="projects-container">
 
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_parrillera.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_parrillera.png" alt="PARRILLERA" loading="lazy" class="project-pic" />
         <h3 class="project-title">PARRILLERA</h3>
         <p class="project-details">
           Queso provoleta con chimichurri, morcilla, morrón a la plancha, cebolla roja y ketchup ahumado
@@ -92,7 +84,7 @@
 
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_paticomple.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_paticomple.png" alt="PATY completo" loading="lazy" class="project-pic" />
         <h3 class="project-title">PATY completo
         </h3>
         <p class="project-details">
@@ -101,14 +93,14 @@
       </div>
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_cuzcoHatuchay.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_cuzcoHatuchay.png" alt="CUZCO HATUCHAY" loading="lazy" class="project-pic" />
         <h3 class="project-title">CUZCO HATUCHAY</h3>
         <p class="project-details">
           Queso reggianito, batata frita, sarza (cebolla, limón, jalapeño, cilantro)y salsa Huancaína
       </div>
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_gringa.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_gringa.png" alt="GRINGA" loading="lazy" class="project-pic" />
         <h3 class="project-title">GRINGA</h3>
         <p class="project-details">
           Queso cheddar, panceta ahumada, pepinos en pickle y ketchup
@@ -118,7 +110,7 @@
       </div>
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_costanera.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_costanera.png" alt="COSTANERA" loading="lazy" class="project-pic" />
         <h3 class="project-title">COSTANERA</h3>
         <p class="project-details">
           Queso danbo, huevo a la plancha, jamón cocido, cebolla a la plancha y mayonesa de oliva
@@ -128,18 +120,17 @@
       </div>
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_caprichosa.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-        <h3 class="project-title">CAPRICHISA</h3>
+        <img src="assets/images/icon_caprichosa.png" alt="CAPRICHISA" loading="lazy" class="project-pic" />
+        <h3 class="project-title">CAPRICHoSA</h3>
         <p class="project-details">
           Doble hamburguesa, doble cheddar, doble panceta, cebolla caramelizada y ketchup
-          <br>
           <br>
           <br>
         </p>
       </div>
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_chigadazo.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_chigadazo.png" alt="CHINGADAZO" loading="lazy" class="project-pic" />
         <h3 class="project-title">CHINGADAZO</h3>
         <p class="project-details">
           Queso pategrás, tomates frescos, escabeche de jalapeño y guacamole
@@ -151,7 +142,7 @@
 
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_donaTota.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_donaTota.png" alt="DOÑA TOTA" loading="lazy" class="project-pic" />
         <h3 class="project-title">DOÑA TOTA</h3>
         <p class="project-details">
           Queso cheddar, huevo a la plancha, panceta, fideos moñito con cheddar y salsa barbacoa
@@ -163,137 +154,115 @@
     </div>
   </section>
 
-  <section class="projects" id="Extrax">
-    <br>
-    <br>
-    <br>
-
+  <section class="projects" id="Extras">
+    <br><br><br><br>
     <h2 class="projects-title">Nuestos Extras</h2>
     <div class="projects-container">
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_ArosCebolla.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_ArosCebolla.png" alt="AROS DE CEBOLLA" loading="lazy" class="project-pic" />
         <h3 class="project-title">AROS DE CEBOLLA</h3>
 
       </div>
       <div class="project-container project-card">
-        <img src="assets/images/icon_papasCheddar.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_papasCheddar.png" alt="PAPAS CON CHEDDAR" loading="lazy" class="project-pic" />
         <h3 class="project-title">PAPAS CON CHEDDAR</h3>
 
       </div>
 
       <div class="project-container project-card">
-        <img src="assets/images/icon_papasCombo.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_papasCombo.png" alt="PAPAS COMBO" loading="lazy" class="project-pic" />
         <h3 class="project-title">PAPAS COMBO</h3>
 
       </div>
       <div class="project-container project-card">
-        <img src="assets/images/icon_bunuelosEspinaca.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_bunuelosEspinaca.png" alt="BUNUELOS DE ESPINACA" loading="lazy"
+          class="project-pic" />
         <h3 class="project-title">BUNUELOS DE ESPINACA</h3>
 
       </div>
-   
+
       <div class="project-container project-card">
-        <img src="assets/images/icon_Papas3.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <img src="assets/images/icon_Papas3.png" alt="PAPAS CON ESPECIAS" loading="lazy" class="project-pic" />
         <h3 class="project-title">PAPAS CON ESPECIAS</h3>
-        </div>
+      </div>
+
+      <div class="project-container project-card">
+        <img src="assets/images/icon_tendersPollo.png" alt="DADOS DE POLLO" loading="lazy" class="project-pic" />
+        <h3 class="project-title">DADOS DE POLLO</h3>
+      </div>
+  </section>
+
+  <section class="projects" id="Salsas">
+    <br><br><br><br>
+    <h2 class="projects-title">Nuestos Salsas Especiales</h2>
+    <div class="projects-container">
+
+      <div class="project-container project-card">
+        <img src="assets/images/icon_fresca.png" alt="FUEGO" loading="lazy" class="project-pic" />
+        <h3 class="project-title">FRESCA</h3>
+
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/icon_fuego.png" alt="FUEGO" loading="lazy" class="project-pic" />
+        <h3 class="project-title">FUEGO</h3>
+
+      </div>
+
+      <div class="project-container project-card">
+        <img src="assets/images/icon_luna.png" alt="LUNA" loading="lazy" class="project-pic" />
+        <h3 class="project-title">LUNA</h3>
+
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/icon_humo.png" alt="HUMO" loading="lazy" class="project-pic" />
+        <h3 class="project-title">HUMO</h3>
+
+      </div>
 
   </section>
-<!-- Salsas section -->
-  <section class="projects" id="Salsas">
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <h2 class="projects-title">Nuestas Salsas</h2>
+  <section class="projects" id="Bebidas">
+    <br><br><br><br>
+    <h2 class="projects-title">Nuestras Bebidas</h2>
     <div class="projects-container">
 
-        <div class="project-container project-card">
-            <img src="assets/images/icon_Mayonesa.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-            <h3 class="project-title">MAYONESA</h3>
-            </div>
 
-
-            <div class="project-container project-card">
-                <img src="assets/images/icon_Ketchup.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-                <h3 class="project-title">KETCHUP</h3>
-            </div>
-
-            <div class="project-container project-card">
-                <img src="assets/images/icon_Mostaza.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-                <h3 class="project-title">MOSTAZA</h3>
-            </div>
-
-
-
-        </div>
-    <br>
-    <br>
-    <br>
-    <br>
+      <div class="project-container project-card">
+        <img src="assets/images/icon_smoked.png" alt="SMOKED" loading="lazy" class="project-pic" />
+        <h3 class="project-title">SMOKED</h3>
 
       </div>
 
-<!-- Bebidas section -->
-<section class="projects" id="Bebidas">
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <h2 class="projects-title">Nuestas Bebidas</h2>
-    <div class="projects-container">
-
-        <div class="projects-container">
-
-            <div class="project-container project-card">
-                <img src="assets/images/icon_Cerveza.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-                <h3 class="project-title">CERVEZA</h3>
-                </div>
-                
-    
-                <div class="project-container project-card">
-                    <img src="assets/images/icon_Coca.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-                    <h3 class="project-title">COCA-COLA</h3>
-                </div>
-    
-                <div class="project-container project-card">
-                    <img src="assets/images/icon_Sprite.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-                    <h3 class="project-title">SPRITE</h3>
-                </div>
-                
-                <div class="project-container project-card">
-                    <img src="assets/images/icon_Fanta.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-                    <h3 class="project-title">FANTA</h3>
-                </div>
-    
-    
-            </div>
-
+      <div class="project-container project-card">
+        <img src="assets/images/icon_aldea.png" alt="ALDEA" loading="lazy" class="project-pic" />
+        <h3 class="project-title">ALDEA</h3>
 
       </div>
 
+      <div class="project-container project-card">
+        <img src="assets/images/icon_cañoscito.png" alt="CAÑONCITO" loading="lazy" class="project-pic" />
+        <h3 class="project-title">CAÑONCITO</h3>
 
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/icon_gijaness.png" alt="GIJANESS" loading="lazy" class="project-pic" />
+        <h3 class="project-title">GIJANESS</h3>
 
-  <!-- Contact section -->
-  <section class="contact" id="Contact">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+      </div>
 
- <h2><center>
-        DEJANOS TU CONSULTA O SUGERENCIA
-    </center>
-    </h2>
+  </section>
+
+  <!-- Contactos -->
+  <section class="contact projects" id="contacto">
+    <br><br><br><br>
+    <h2 class="projects-title">Pedidos online - Consultas o Sugerencia</h2>
     <div class="contact-form-container">
       <div class="contact-form">
         <form action="https://formspree.io/f/xyylnggw" method="POST">
           <div class="form-control">
             <label for="name">Nombre</label>
-            <input type="text" id="name" name="sender-name" placeholder="Escriba su Nombre" class="input-field"
+            <input type="text" id="name" name="sender-name" placeholder="Escriba su nombre" class="input-field"
               required />
           </div>
           <div class="form-control">
@@ -312,51 +281,104 @@
     </div>
   </section>
 
+  <!-- Mapas-->
+
+  <section class="projects" id="sucursales">
+    <br><br><br><br>
+    <h2 class="projects-title">Nuestras sucursales</h2>
+    <div class="projects-container">
+
+      <div class="project-container project-card">
+        <h3 class="project-title">Microcentro</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016713276845!2d-58.38375908482649!3d-34.60373888045951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1666537308394!5m2!1ses!2sar"
+          width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+      <div class="project-container project-card">
+        <h3 class="project-title">Puerto madero</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3283.8308942961207!2d-58.37207648482621!3d-34.60843743045832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scasa%20rosada!5e0!3m2!1ses!2sar!4v1666540000142!5m2!1ses!2sar"
+          width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="project-container project-card">
+        <h3 class="project-title">Palermo</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6567.552360751558!2d-58.401360830224625!3d-34.6098208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac2cd859503%3A0x75cdafaaef2b946!2sCongreso%20de%20la%20Naci%C3%B3n%20Argentina!5e0!3m2!1ses!2sar!4v1666540050310!5m2!1ses!2sar"
+          width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+
+      
+  </section>
+
   <section class="projects" id="IP">
-<br><br><br><br><br><br><br><br><br>
-<div align="center"> 
-<h2 class="projects-title">Conoce tu IP
-
-<script type="application/javascript">
-
-  function getIP(json) {
-
-    document.write("<h2><center> Mi direccion IP Publica es: </h2></center><br>", json.ip);
-   
-  }
-</script>
-</h2>
-
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-</div>  
-
-<br><br><br><br><br><br><br><br>
-</section>
-
-
+    <br><br><br><br><br><br><br><br><br><br>
+    <div align="center"> 
+    <h2 class="projects-title">Conoce tu IP
+    
+    <script type="application/javascript">
+    
+      function getIP(json) {
+    
+        document.write("<h2><center> Mi direccion IP Publica es: </h2></center><br>", json.ip);
+       
+      }
+    </script>
+    </h2>
+    
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    </div>  
+    
+    <br><br><br><br><br><br><br><br>
+    </section>
 
 
-  <!-- Social accounts - Fixed to the right -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Redes sociales -->
   <div class="socials">
-    <a href="#" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy"
-        class="socicon" /></a>
-    <a href="#" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy"
-        class="socicon" /></a>
-    <a href="#" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy"
-        class="socicon" /></a>
-    <a href="#" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a>
+    <a href="https://twitter.com/EducacionBA" target="_blank"><img src="assets/icons/icons8-twitter.gif" alt="Twitter"
+        loading="lazy" class="socicon" /></a>
+    <a href="https://www.instagram.com/educacionba/" target="_blank"><img src="assets/icons/icons8-instagram (1).gif"
+        alt="Instagram" loading="lazy" class="socicon" /></a>
+    <a href="https://www.youtube.com/channel/UC2HtgpM8A9Nv-8y0j5v5ZOQ" target="_blank"><img
+        src="assets/icons/icons8-youtube.gif" alt="Youtube" loading="lazy" class="socicon" /></a>
+    <a href="https://www.facebook.com/EducacionBA/" target="_blank"><img src="assets/icons/icons8-facebook.gif"
+        alt="Facebook" class="socicon" /></a>
   </div>
 
   <!-- Scroll to top -->
-  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow"
+  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow-2.gif" class="socicon up-arrow"
       alt="" /></i>
 
-  <!-- Footer section -->
+  <!-- Pie de pagina -->
   <footer>
-    <p class="copy">&copy; Copyright 2021</p>
+    <p class="copy">&copy; Copyright 2022</p>
     <p class="copy">
-      Built with &#x2661; by
-      <a href="https://twitter.com/koladechris" target="_blank">Kolade Chris (Ksound)</a>
+      Hecho &#x2661; by
+      <a href="https://twitter.com/EducacionBA" target="_blank">Alumnos de Codo a Codo</a>
     </p>
   </footer>
 
@@ -366,9 +388,6 @@
   <!-- Ion icons scripts -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
- 
-    
-
 </body>
 
 </html>
